@@ -35,10 +35,10 @@ if sys.version_info[0] == 3:
     import tkinter.messagebox as tkMessageBox    
     
     
-from velox_correction import velox_correction
+from vibrationdata.velox_correction import velox_correction
 
-from vb_utilities import read_two_columns_from_dialog,WriteData2 
-from vb_utilities import signal_stats,sample_rate_check
+from vibrationdata.vb_utilities import read_two_columns_from_dialog,WriteData2 
+from vibrationdata.vb_utilities import signal_stats,sample_rate_check
   
 from numpy import array,zeros,log,log10,pi,sqrt,linspace,round,ceil,interp
 from numpy import cos,sin,std,floor,argmax,histogram
