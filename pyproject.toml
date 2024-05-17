@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vibrationdata"
+version = "0.0.1"
+authors = [
+  { name="Tom Irvine", email="tom@irvinemail.org" },
+  { name="Nicholas Katsinas", email="nick@nickkatsinas.com" },
+]
+description = "A package for performing vibration analyses"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ['matplotlib', 'scipy']
+
+[project.optional-dependencies]
+doc = [
+
+]
+
+dev = ['pytest']
